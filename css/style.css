@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka+One&family=Inter:wght@400;600;700&family=Nunito:wght@700&display=swap");
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+/* ESTILO GERAL */
+
+.color {
+  color: #3affe5;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 79px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 50px;
+}
+
+.navigation ul {
+  display: flex;
+  margin-right: 55px;
+}
+
+.navigation li + li {
+  margin-left: 37px;
+}
+
+.navigation ul li:nth-child(4) {
+  margin-right: 37px;
+}
+
+.item-menu {
+  color: #7b7b7b;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+.menu-ativo {
+  font-weight: bold;
+  color: #252160;
+}
+.btn {
+  background: #252160;
+  padding: 10px 21.5px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9375em;
+  font-weight: bold;
+}
+
+/* FIM HEADER */
+
+/* INTRODUCAO */
+
+.introducao {
+  width: 100%;
+  background: #252160;
+  display: grid;
+  grid-template-areas: "seeplans" "main-image";
+  grid-template-columns: 1fr 1fr;
+}
+
+.see-plans {
+  grid-area: seeplans;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 0 70px 70px;
+}
+
+.see-plans .text-main {
+  margin-left: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.286875em;
+  color: #3affe5;
+}
+
+.see-plans h1,
+.text,
+.call {
+  margin-top: 32px;
+}
+.see-plans h1 {
+  font-family: "Fredoka One", cursive;
+  color: #fff;
+  font-size: 4.0725em;
+  line-height: 75.6px;
+}
+
+.see-plans .text {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.215625em;
+}
+
+.see-plans .call {
+  display: flex;
+  background-color: #3affe5;
+  padding: 15px 90px;
+  border-radius: 6.98px;
+  color: #252160;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.090625em;
+  align-items: center;
+}
+
+.see-plans .call p {
+  margin-left: 20px;
+}
+.main-image {
+  background-image: url("/img/Image-principal.png");
+  background-position: right;
+  margin-top: 20px;
+}
+/* FIM INTRODUCAO */
