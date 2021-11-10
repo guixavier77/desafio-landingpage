@@ -106,7 +106,7 @@ font-family: 'Nunito', sans-serif; */
   font-size: 1.215625em;
 }
 
-.see-plans .call {
+.call {
   display: flex;
   background-color: #3affe5;
   padding: 15px 90px;
@@ -127,3 +127,125 @@ font-family: 'Nunito', sans-serif; */
   margin-top: 20px;
 }
 /* FIM INTRODUCAO */
+
+/* INICIO SLIDE */
+
+.logo-slide {
+  margin-top: 30px;
+}
+.logo-slide ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-slide li + li {
+  margin-left: 50px;
+}
+
+.logo-slide img {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.logo-slide img:hover {
+  transform: scale(1.1);
+}
+
+/* FIM SLIDE */
+
+/* INFO */
+
+.informacoes {
+  font-family: "Inter", sans-serif;
+  margin-top: 25px;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+}
+
+.informacoes h3 {
+  color: #252160;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.informacoes .text-info {
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30.12px;
+  margin-top: 20px;
+}
+
+.informacoes .left {
+  position: relative;
+  grid-area: left;
+}
+
+.info-list {
+  padding: 80px 61px 20px 214px;
+}
+
+.info-list li {
+  margin-top: 30px;
+}
+
+.info-list li:last-child {
+  margin-top: 34px;
+}
+
+.info-list::before {
+  content: "";
+  background: url("../img/imglista.png") no-repeat center;
+  display: block;
+  position: absolute;
+  left: 120px;
+  top: 86px;
+  width: 68px;
+  height: 404px;
+  z-index: -1;
+}
+.informacoes .right {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: right;
+}
+
+.btn-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252160;
+  padding: 15px;
+  border-radius: 6.98px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.090625em;
+  margin-left: 120px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.btn-info span {
+  margin-left: 20px;
+}
+/* FIM INFO */
+
+.teste {
+  height: 60px;
+}
+/* JAVASCRIPT */
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
