@@ -313,8 +313,14 @@ font-family: 'Nunito Sans', sans-serif; */
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
+
+.card-group {
+  display: grid;
+  grid-template-areas: "card-recomendado card-aprovado";
+}
 .planos .title-primario-planos {
   font-size: 22px;
+
   color: #32b5ff;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -324,12 +330,22 @@ font-family: 'Nunito Sans', sans-serif; */
   font-size: 44px;
   color: #252160;
   margin-bottom: 58px;
+  font-weight: 700;
 }
-.card {
+.card-recomendado {
   background: #252160;
   width: 570px;
+  height: 600px;
   border-radius: 18px;
   margin-left: 80px;
+  grid-area: card-recomendado;
+  position: relative;
+}
+
+.card-recomendado .desconto {
+  position: absolute;
+  top: 25px;
+  left: 387px;
 }
 
 .card-container {
@@ -338,6 +354,7 @@ font-family: 'Nunito Sans', sans-serif; */
 
 .card-container .title-primario {
   font-size: 22px;
+  font-weight: 700;
   color: #3c5882;
   margin-bottom: 10px;
 }
@@ -346,6 +363,7 @@ font-family: 'Nunito Sans', sans-serif; */
   font-size: 30px;
   color: #fff;
   margin-bottom: 45px;
+  font-weight: 700;
 }
 
 .card-container .text-vantagens {
@@ -394,6 +412,7 @@ font-family: 'Nunito Sans', sans-serif; */
   font-size: 20px;
   color: #3affe5;
   margin-top: 13px;
+  margin-right: 15px;
 }
 
 .planos-columns .previous-value {
@@ -422,13 +441,15 @@ font-family: 'Nunito Sans', sans-serif; */
   color: #fff;
   opacity: 45%;
   margin-top: 27px;
+  margin-left: 5px;
 }
 
 .planos-columns .calc-month {
   grid-area: calcmonth;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
   color: #fff;
   opacity: 45%;
 }
@@ -447,7 +468,76 @@ font-family: 'Nunito Sans', sans-serif; */
   margin-left: 70px;
 }
 
+.card-aprovado {
+  grid-area: card-aprovado;
+  width: 570px;
+  height: 600px;
+  border: 1px solid #201e54;
+  border-radius: 18px;
+}
+.card-aprovado .card-container .cifrao {
+  margin: 0;
+}
+.card-aprovado .card-container .title-secundario-aprovado,
+.card-aprovado .card-container .vantagens-aprovado ul,
+.card-aprovado .card-container .current-value,
+.card-aprovado .card-container .year {
+  color: #252160;
+  opacity: 100%;
+}
+
+.card-aprovado .card-container .planos-columns {
+  margin-top: 55px;
+}
+
+.card-aprovado .card-container .btn-aprovado {
+  background: #252160;
+  margin-left: 50px;
+}
+
 /* FIM PLANOS */
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+  font-family: "Nunito", sans-serif;
+}
+
+.depoimentos .title-primario-depoimentos {
+  font-size: 22px;
+  color: #32b5ff;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.depoimentos .title-secundario-depoimentos {
+  font-size: 44px;
+  color: #252160;
+  margin-bottom: 58px;
+  font-weight: 700;
+}
+
+.depoimentos .title-depoimentos {
+  padding: 50px 0 0 80px;
+}
+.depoimentos .reviews {
+  display: grid;
+  grid-template-areas: "review1 review2 review3";
+  margin: 0 80px 0 80px;
+}
+
+.review1 {
+  grid-area: review1;
+}
+
+.review2 {
+  grid-area: review2;
+}
+
+.review3 {
+  grid-area: review3;
+}
+/* FIM DEPOIMENTOS */
 
 /* JAVASCRIPT */
 .js [data-anime] {
