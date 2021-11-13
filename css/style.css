@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka+One&family=Inter:wght@400;600;700&family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka+One&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@400;700;800&display=swap");
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Fredoka One', cursive;
 font-family: 'Inter', sans-serif;
@@ -606,23 +606,53 @@ font-family: 'Nunito Sans', sans-serif; */
 footer .footer {
   display: grid;
   grid-template-areas: "footer-column-1 footer-column-2 footer-column-3 footer-column-4";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 35% 1fr 1fr 1fr;
+  padding: 86px 80px 0 80px;
+
+  font-family: "Inter", sans-serif;
 }
 
 .footer-column-1 {
   grid-area: footer-column-1;
 }
 
+.footer-column-1 .img-googleplay {
+  margin-top: 53px;
+}
+
 .footer-column-2 {
   grid-area: footer-column-2;
+}
+
+.footer h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #252160;
+  margin-bottom: 13px;
+}
+
+.footer ul li {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 7px;
+  color: #7b7b7b;
 }
 
 .footer-column-3 {
   grid-area: footer-column-3;
 }
 
-.footer-column-3 {
+.footer-column-4 {
   grid-area: footer-column-4;
+}
+
+.footer-column-4 ul li {
+  margin-bottom: 9px;
+}
+
+.footer-bottom {
+  padding: 61px 0 43px 80px;
 }
 /* JAVASCRIPT */
 .js [data-anime] {
