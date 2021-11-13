@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka+One&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@400;700;800&family=Work+Sans&display=swap");
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Fredoka One', cursive;
-font-family: 'Inter', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Nunito Sans', sans-serif; */
+
 /* ESTILO GERAL */
 
+html {
+  scroll-behavior: smooth;
+}
 .color {
   color: #3affe5;
 }
