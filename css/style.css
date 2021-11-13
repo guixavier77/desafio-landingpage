@@ -472,7 +472,7 @@ font-family: 'Nunito Sans', sans-serif; */
   grid-area: card-aprovado;
   width: 570px;
   height: 600px;
-  border: 1px solid #201e54;
+  border: 1px solid rgba(32, 30, 84, 0.18);
   border-radius: 18px;
 }
 .card-aprovado .card-container .cifrao {
@@ -539,6 +539,91 @@ font-family: 'Nunito Sans', sans-serif; */
 }
 /* FIM DEPOIMENTOS */
 
+/* INFO APP */
+
+.info-app {
+  display: grid;
+  margin-top: 200px;
+  grid-template-areas: "img-app text-app";
+  grid-template-columns: 45% 55%;
+  background: #252160;
+  height: 668px;
+}
+
+.info-app .img-app {
+  grid-area: img-app;
+  padding-left: 80px;
+  position: relative;
+  top: -88px;
+}
+
+.info-app .text-app {
+  grid-area: text-app;
+  padding-top: 180px;
+  margin-left: 80px;
+}
+
+.info-app .text-app-principal {
+  display: flex;
+  align-items: center;
+}
+.info-app .text-app-principal img {
+  margin-right: 23px;
+}
+
+.info-app .text-app-principal .text-main {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #3affe5;
+  font-size: 21px;
+}
+
+.info-app .text-app .text-sec-app {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 19.45px;
+  line-height: 29px;
+  color: #fff;
+  margin: 36px 0 32px 0;
+}
+
+.btn-app {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17.45px;
+  padding: 15px 70px;
+  color: #252160;
+  background: linear-gradient(145.09deg, #26e9cf 11.81%, #25cde1 95.89%);
+  box-shadow: -1.16333px 1.16333px 6.98px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+}
+
+.btn-app span {
+  margin-left: 32px;
+}
+/* FIM INFO APP */
+
+footer .footer {
+  display: grid;
+  grid-template-areas: "footer-column-1 footer-column-2 footer-column-3 footer-column-4";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-column-1 {
+  grid-area: footer-column-1;
+}
+
+.footer-column-2 {
+  grid-area: footer-column-2;
+}
+
+.footer-column-3 {
+  grid-area: footer-column-3;
+}
+
+.footer-column-3 {
+  grid-area: footer-column-4;
+}
 /* JAVASCRIPT */
 .js [data-anime] {
   opacity: 0;
