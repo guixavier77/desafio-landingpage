@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka+One&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka+One&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@400;700;800&family=Work+Sans&display=swap");
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Fredoka One', cursive;
 font-family: 'Inter', sans-serif;
@@ -651,9 +651,40 @@ footer .footer {
   margin-bottom: 9px;
 }
 
+/* FOOTER BOTTOM */
 .footer-bottom {
-  padding: 61px 0 43px 80px;
+  padding: 30px 0 30px 0;
 }
+.container-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px 0 80px;
+}
+
+.container-footer-bottom p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: #7b7b7b;
+}
+
+.container-footer-bottom ul {
+  display: flex;
+  align-items: center;
+}
+
+.container-footer-bottom ul li + li {
+  margin-left: 30px;
+}
+
+.container-footer-bottom .seta {
+  border-radius: 50%;
+  background: #252160;
+  color: #fff;
+  padding: 20px 24px;
+  font-size: 22px;
+}
+
 /* JAVASCRIPT */
 .js [data-anime] {
   opacity: 0;
