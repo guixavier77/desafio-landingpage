@@ -5,6 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
 .color {
   color: #3affe5;
 }
@@ -122,7 +129,7 @@ html {
   margin-left: 20px;
 }
 .main-image {
-  background-image: url("/img/Image-principal.png");
+  background-image: url("../img/Image-principal.png");
   background-position: right;
   margin-top: 20px;
 }
